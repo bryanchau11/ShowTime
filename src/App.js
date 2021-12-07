@@ -4,11 +4,11 @@ import HomeBackGround from "./assets/Images/homebackground.jpg";
 import React, { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import SearchBar from "./components/SearchBar";
-import Embed from "react-embed";
 var axios = require("axios").default;
 function App() {
   const args = JSON.parse(document.getElementById("data").text);
   const [id, setID] = useState(null);
+  /* 
   useEffect(() => {
     const options = {
       method: "GET",
@@ -25,7 +25,7 @@ function App() {
         console.error(error);
       });
   }, []);
-
+*/
   return (
     <div>
       <div className="home-container">
@@ -38,9 +38,6 @@ function App() {
             title="movie"
             src={`https://www.2embed.ru/embed/imdb/movie?id=${id}`}
           />
-        </div>
-        <div className="text">
-          <SearchBar />
         </div>
       </div>
     </div>
