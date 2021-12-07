@@ -1,0 +1,24 @@
+.primary {
+  /* Thinking between two colors */
+  /* background-color : #EBC258; */
+  background-color: #043c52;
+}
+
+/* SEARCH BAR */
+.input-search {
+  margin-left: 300px;
+  display: flex;
+}
+.offset-md-5 {
+  margin-left: 60%;
+}
+
+.form-control {
+  margin-left: 100px;
+}
+
+.searchBar {
+  height: 50px;
+  width: 50px;
+  margin-left: 45px;
+}

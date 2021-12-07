@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import HomeBackGround from "./assets/Images/homebackground.jpg";
+import React from "react";
+import NavBar from "./components/NavBar";
+import SearchBar from "./components/SearchBar";
 function App() {
+  const args = JSON.parse(document.getElementById("data").text);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="home-container">
+        <div>
+          <NavBar />
+        </div>
+        <div className="community" id="header">
+          <img src={HomeBackGround} alt="home" className="thumbnail" />
+        </div>
+        <div className="text">
+          <SearchBar />
+        </div>
+      </div>
     </div>
   );
 }
